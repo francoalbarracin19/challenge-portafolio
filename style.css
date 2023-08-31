@@ -1,0 +1,726 @@
+:root{
+
+/*fondo de pantall general*/
+--fondo-de-pantalla-general: url("portada-1.jpg");
+
+/*color principal*/
+--color-primario-general: #b8ffaf;
+
+/*color segundario linear*/
+--color-segundario-linear-1: rgb(0,14,255);
+--color-segundario-linear-2: linear-gradient(151deg, rgb(0, 14, 255) 0%, rgba(0,0,0,0.8547794117647058) 47%, rgba(12,0,255,1) 100%);;
+
+/*foto de perfil*/
+--perfil-img: url("perfil.jpg");
+
+/*color de texto de las sections*/
+--color-section-texto: #000000;
+
+/*fuentes*/
+--font-sections: 'Staatliches';
+--font-txt-demas: 'Rajdhani';
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.portada{
+width: 100%;
+height: 900px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: var(--fondo-de-pantalla-general);
+background-repeat: no-repeat;
+object-fit: cover;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+animation-name: portada;
+animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+@keyframes  portada {
+    0%{
+        background-position: center;
+    }
+    10%{
+        background-position:  top;
+    }
+    20%{
+        background-position: bottom;
+    }
+    30%{
+        background-position: top;
+    }
+    40%{
+        background-position: bottom;
+    }
+    50%{
+        background-position: top;
+    }  
+    60%{
+        background-position: bottom;
+    }  
+    70%{
+        background-position: top;
+    }  
+    80%{
+        background-position:  bottom;
+    }  
+    90%{
+        background-position: top;
+    }  
+    100%{
+        background-position: bottom;
+    }  
+ }
+
+.texto-demas{
+font-family: var(--font-txt-demas);
+}
+
+/* section principal PRESENTACION*/
+.section-presentacion{
+width: 100%;
+border-top: 60px solid #b8ffaf;
+background-color: #b8ffaf;
+display: grid;
+grid-template-columns: 450px 1fr;
+grid-template-rows: 500px;
+}
+
+/* parte izquierda de la card*/
+.presentacion__perfil{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 40px 0;
+padding-left: 20px;
+}
+
+.perfil__h1{
+color: rgb(0, 0, 0);
+font-size: 1rem;
+padding: 5px;
+border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.perfil__h4{
+color: rgb(0, 0, 0);
+font-size: 1.5rem;
+font-weight: normal;
+}
+
+.nombre{
+font-family: 'Marck Script';
+font-size: 1.8rem;
+background-color: rgb(0, 0, 0);
+padding: 0 7px 0 7px;
+border-radius: 5px;
+color: rgb(172, 255, 151);
+}
+
+/* parte derecha de la card*/
+.presentacion__img{
+width: 100%;
+height: 100%;
+background-image: var(--perfil-img);
+background-repeat: no-repeat;
+background-size:cover ;
+object-fit: cover;
+background-position: center;
+clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* SECTIONS: VALORES YA PREDETERMINADOS*/
+
+/* Todas las section contenedor*/
+.section-all{
+width: 100%;
+height: 750px;
+border-top: 100px solid var(--color-primario-general);
+background-attachment: fixed;
+background-image: var(--fondo-de-pantalla-general);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+animation-name: portada;
+animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* parte izquierda */
+.section-all__top{
+width: 350px;
+height: 200px;
+clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+display: flex;
+align-items: center;
+padding-left: 10px;
+}
+
+/* titulo de las secciones */
+.top__texto{
+text-align: center;
+font-family: var(--font-sections);
+font-size: 3rem;
+letter-spacing: 0.6rem;
+color: var(--color-section-texto);
+animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+.section-all__top{
+background-color: var(--color-primario-general);
+}
+
+/* SECTIONS ABOUT*/
+.section-about{
+display: flex;
+justify-content: space-between;
+}
+
+/* ABOUT bottom*/
+.about-bottom{
+width: 900px;
+height: 450px;
+background: var(--color-segundario-linear-1);
+background: var(--color-segundario-linear-2);
+clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+line-height: 40px;
+}
+
+.about-bottom__h4{
+text-align: right;
+font-family: var(--font-txt-demas);
+color: rgb(255, 255, 255);
+font-size: 1.3rem;
+}
+
+/* SECTIONS SKILL*/
+
+/* altura general 600px*/
+.section-skill{
+display: flex;
+/* cambiamos la dereccion hacia abajo*/
+flex-direction: column;
+justify-content: space-between;
+height: auto;
+}
+
+/* SKILL top*/
+.skill-txt{
+text-align: center;
+font-size: 40px;
+color: var(--color-section-texto);
+}
+    
+/* SKILL bottom*/
+.skill-bottom{ 
+width: 100%;
+display: flex; 
+justify-content: center;
+align-items: center;
+line-height: 40px;
+display: flex;
+flex-direction: column;
+padding: 150px 0 150px 0;
+}
+    
+.bottom__texto{
+font-size: 25px;
+text-align: center;
+}
+
+.card-contenedor-skill{
+width: 100%;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.boxs-skill{
+width: 300px;
+height: 300px;
+background-color: rgba(0, 0, 0, 0.479);
+border: 3px solid var(--color-primario-general);
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 12px 6px 100px 1px #7CF197, 5px 5px 10px 1px #000;
+animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+        opacity: 1;		
+	}
+	25%,
+	75% {
+       opacity: 0;		
+	}
+}
+
+.icono-skill{
+width: 100px;
+}
+
+/* SECTION EDUCATION*/
+.section-education{
+height: auto;
+}
+
+.section-education-bottom{
+width: 100%;
+margin-top: 100px;
+padding-bottom: 100px;
+display: grid;
+grid-template-columns: 600px 600px;
+grid-template-rows: 500px;
+grid-auto-rows: 500px;
+justify-content: space-around;
+align-items: center;
+gap: 150px 20px;
+}
+
+/* CARD*/
+.cards-education{
+width: 100%;
+height: 100%;
+border-top: 7px solid white;
+border-bottom: 7px solid white;
+background-color: rgba(255, 255, 255, 0.787);
+padding: 0px;
+clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+transition: 1s;
+cursor: pointer;
+}
+
+.cards-education:hover{
+background-color: white;
+}
+
+.cars-education__description-curso{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.description-curso__formacion-conteiner{
+width: 100%;
+height: 200px;
+padding-left: 0px;
+background: var(--color-segundario-linear-1);
+background: var(--color-segundario-linear-2);
+display: flex;
+gap: 10px 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.description-curso_academia, .description-curso_formacion, .description-curso_fecha {
+color: white;
+} 
+
+/* SECTION PROYECT*/
+.section-proyectos{
+height: auto;
+padding-bottom: 200px;
+}
+
+.section-proyectos-bottom{
+padding-top: 100px;
+padding-bottom: 100px;
+height: auto;
+display: flex;
+flex-direction: column;
+gap: 50px 0;
+}
+
+/* card proyecto*/
+.card-proyectos-contenedor{
+background: var(--color-segundario-linear-1);
+background: var(--color-segundario-linear-2);
+border: 2px solid wheat;
+display: grid;
+grid-template-columns: 450px 1fr;
+grid-template-rows: 500px;
+}
+
+.cars-proyectos-contenedor__left, .cars-proyectos-contenedor__right{
+width: 100%;
+height: 100%;
+}
+
+/* parte izquierda de la card*/
+.cars-proyectos-contenedor__left-proyect{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 40px 0;
+padding-left: 20px;
+}
+
+.left-proyect__name-proyect{
+color: white;
+font-size: 3em;
+padding: 5px;
+border-bottom: 2px solid wheat;
+}
+
+.left-proyect__enlace-github__img{
+width: 70px;
+height: 70px;
+}
+
+/* parte derecha de la card*/
+.cars-proyectos-contenedor__right-box-1{
+background-image: url("proyect.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+object-fit: cover;
+clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+transition: all 2s;
+}
+
+
+/* FOOTER*/
+.footer{
+border-top: 100px solid var(--color-primario-general);
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 50px 0;
+background-attachment: fixed;
+background-image: var(--fondo-de-pantalla-general);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+animation-name: portada;
+animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+.footer__top{
+width: 30%;
+height: 200px;
+padding-left: 10px;
+align-self: flex-start;
+background-color: var(--color-primario-general);
+clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.footer__bottom{
+width: 100%;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer__bottom__contacto-contenedor{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+gap: 50px 0;
+}
+
+.footer__bottom__developer{
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--color-primario-general);
+}
+
+.developer__p{
+color: var(--color-section-texto);
+font-size: 22px;
+}
+
+
+
+
+          /*RESPONSIVE*/
+
+
+@media screen and (max-width:1250px){
+
+.portada{
+height: 600px;
+}
+
+.section-education-bottom{
+display: grid;
+grid-template-columns: 600px;
+grid-template-rows: 500px;
+grid-auto-rows: 500px;
+justify-content: center;
+align-items: center;
+gap: 150px 20px;
+}
+ 
+}
+
+@media screen and (max-width:1135px){
+
+.presentacion__img{
+display: none;
+}
+
+.section-presentacion{
+background-image: url("perfil.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+border: none;
+clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.perfil__h1, .perfil__h4{
+color: rgb(255, 255, 255);
+}
+
+}
+    
+/* titulo de las secciones */
+.top__texto{
+font-size: 3rem;
+letter-spacing: 0rem;
+}
+
+/* Card proyecto */
+.card-proyectos-contenedor{
+background: var(--color-segundario-linear-1);
+background: var(--color-segundario-linear-2);
+border: 2px solid wheat;
+display: grid;
+grid-template-columns: 250px 1fr;
+grid-template-rows: 500px;
+}
+
+/* parte derecha de la card IMG*/
+.cars-proyectos-contenedor__right-box-1{
+background-position: right;  
+}
+
+
+@media screen and (max-width:900px){
+
+/* SECTIONS ABOUT*/
+.section-about{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding-bottom: 50px;
+gap: 20px 0;
+}
+
+/* ABOUT bottom*/
+.about-bottom{
+width: 100%;
+}
+
+.footer__top{
+width: 50%;
+height: 200px;
+padding-left: 10px;
+}
+    
+}
+
+
+@media screen and (max-width:700px){
+
+/* Card proyecto */
+.card-proyectos-contenedor{
+background-image: url("proyect.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: cover;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 300px;
+}
+
+
+.left-proyect__name-proyect{
+color: rgb(0, 0, 0);
+border-bottom: 4px solid rgb(187, 255, 181);
+}
+
+/* parte derecha de la card IMG*/
+.cars-proyectos-contenedor__right-box-1{
+display: none;
+}
+
+}
+    
+    
+
+@media screen and (max-width:600px){
+
+.about-bottom{
+display: flex;
+justify-content: center;
+align-items: center;
+clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+        
+.about-bottom__h4{
+text-align: justify;
+}
+
+/* EDUCATION*/
+.cards-education{
+width: 85%;
+margin: 0 auto;
+padding: 0;
+border-radius: 25px;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.description-curso_academia, .description-curso_formacion, .description-curso_fecha {
+font-size: 1.3rem;
+} 
+
+/* SKILL*/
+.boxs-skill{
+width: 250px;
+height: 250px;
+}
+
+}
+
+
+@media screen and (max-width:520px){
+
+/* section principal PRESENTACION*/
+.section-presentacion{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 500px;
+background-position: right;
+}
+
+/* parte izquierda */
+.section-all__top{
+width: 250px;
+height: 150px;
+clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+display: flex;
+align-items: center;
+padding-left: 10px;
+}
+    
+/* titulo de las secciones */
+.top__texto{
+text-align: center;
+font-family: var(--font-sections);
+font-size: 3rem;
+letter-spacing: 0rem;
+}
+
+/* EDUCATION*/
+.cards-education{
+width: 70%;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+  
+/* SKILL*/
+.boxs-skill{
+width: 200px;
+height: 200px;
+}  
+
+
+.footer__top{
+height: 150px;
+}
+
+}
+
+
+
+
+@media screen and (max-width:450px){
+
+/* SECTION ALL TOP */
+.section-all__top{
+width: 200px;
+height: 80px;
+padding-left: 0px;
+}
+        
+/* titulo de las secciones */
+.top__texto{
+font-size: 2rem;
+}
+
+/* CARDS SKILL */
+.boxs-skill{
+width: 150px;
+height: 150px;
+}  
+    
+
+/* EDUCATION*/
+.cards-education{
+width: 50%;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footer__top{
+width: 60%;
+height: 100px;
+padding-left: 0px;
+}
+    
+}
+
+
+@media screen and (max-width:325px){
+
+/* EDUCATION*/
+.cards-education{
+    width: 45%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}

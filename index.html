@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Marck+Script&family=Rajdhani:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+
+<!-- 
+
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Staatliches', cursive;
+
+
+   -->
+
+    <!--Libreria AOS scroll-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    
+
+<header class="portada conteiner-screm">
+    
+        <!--contenedor-->
+
+     <section class="section-presentacion">
+          
+          <!--izquierda txt-->
+       <div class="presentacion__perfil">
+          <h1 class="perfil__h1 top__texto">Hi There! </h1>
+          <h4 class="perfil__h4 texto-demas">Let me introduce myself, my name is <span class="nombre">Franco Albarracin</span>, student of front-end programming.</h4>
+       </div>
+
+          <!--derecha img-->
+      <div class="presentacion__img"></div>
+
+     </section>
+  
+</header>
+
+<main class="main">
+
+     <!--SECTION #1 ABOUT-->
+    <section class="section-all section-about"  >
+       
+          <!--PARTE izquierda -->
+        <div class="section-all__top about-card">
+            <h2 class="top__texto about-txt"  data-aos="fade-up-right">about me</h2>
+        </div>
+
+        <!--PARTE derecha-->
+        <div class="section-all__bottom about-bottom">
+                <h4 class="about-bottom__h4 texto-demas"  data-aos="fade-up-right">
+                      I am currently in the Oracle Next Education program <br>
+                       to become a Front-End developer and I am also in the <br>
+                        first year of my computer engineering degree.   
+                  </h4>
+        </div>
+    </section>
+    
+
+
+     <!--SECTION #2  SKILL -->
+     <section class="section-all section-skill"  >
+           
+          <!--PARTE izquierda-->
+
+        <div class="section-all__top skill-card">
+            <h2 class="top__texto"  data-aos="fade-up-right">skill</h2>
+        </div>
+
+           <!--PARTE derecha -->
+
+             <!--aqui manejo la altura con auto y padding-->
+        <div class="section-all__bottom skill-bottom">
+            
+            <!--card HTML-->
+            <div class="card-contenedor-skill skill-contenedor-left">
+              <div class="boxs-skill card-skill-patch-left skill-html"  data-aos="fade-up-right">
+                <img class="icono-skill html-icono" src="./svg/icono-html.svg" alt="">
+          
+              </div> 
+            </div>
+            
+            <!--card CSS-->
+            <div class="card-contenedor-skill skill-contenedor-right">  
+               <div class="boxs-skill card-skill-patch-right skill-css"  data-aos="fade-up-right">
+                <img class="icono-skill css-icono" src="./svg/icons8-css.svg" alt="">
+                
+              </div> 
+           </div>
+
+            <!--card JS-->
+            <div class="card-contenedor-skill skill-contenedor-left">
+               <div class="boxs-skill card-skill-patch-left skill-js"  data-aos="fade-up-right">
+                <img class="icono-skill js-icono" src="./svg/icono-js.svg" alt="">
+              </div>
+           </div>
+
+    
+            <!--card GIT-->
+            <div class="card-contenedor-skill skill-contenedor-right">
+               <div class="boxs-skill card-skill-patch-right skill-git"  data-aos="fade-up-right">
+                <img class="icono-skill git-icono" src="./svg/icono-git.svg" alt="">
+              </div> 
+            </div> 
+     
+            <!--card GITHUB-->
+            <div class="card-contenedor-skill skill-contenedor-left">
+              <div class="boxs-skill card-skill-patch-left skill-github"  data-aos="fade-up-right">
+                <img class="icono-skill github-icono" src="./svg/icono-githhub.svg" alt="">
+              </div>
+            </div>
+        
+
+
+        </div>
+
+    </section>
+    
+
+
+     <!--SECTION #3 EDUCATION-->
+     <section class="section-all section-education"  >
+     
+             <!--PARTE izquierda-->
+        <div class="section-all__top card-education">
+            <h2 class="top__texto"  data-aos="fade-up-right">education</h2>
+        </div>
+
+            <!--PARTE derecha-->
+        <div class="section-all__bottom section-education-bottom">
+            
+
+            <!--CARD 1-->
+          <div class="cards-education" data-aos="fade-up-right">
+
+            <img class="cards-education__img-academia" src="svg/alura.svg" alt="">
+
+            <div class="cars-education__description-curso">
+              <div class="description-curso__formacion-conteiner">
+                <h4 class="description-curso_academia texto-demas"  data-aos="fade-up-right">Academy: Alura </h4>
+                <h4 class="description-curso_formacion texto-demas"  data-aos="fade-up-right">Formation: Fron-end Developer</h4>
+                <p class="description-curso_fecha texto-demas"  data-aos="fade-up-right">2023</p>
+              </div>
+            </div>
+
+          </div>
+
+              <!--CARD 2-->
+              <div class="cards-education" data-aos="fade-up-right">
+
+                <img class="cards-education__img-academia img-academia-2" src="svg/free-code-camp-logo.svg" alt="">
+    
+                <div class="cars-education__description-curso">
+                  <div class="description-curso__formacion-conteiner">
+                    <h4 class="description-curso_academia texto-demas" data-aos="fade-up-right">Academy: FreeCodeCamp</h4>
+                    <h4 class="description-curso_formacion texto-demas" data-aos="fade-up-right">Formation: Responsive Web Design  </h4>
+                    <p class="description-curso_fecha texto-demas" data-aos="fade-up-right">2022</p>
+                  </div>
+                </div>
+    
+              </div>
+    
+
+          <!--CARD 3-->
+        <div class="cards-education" data-aos="fade-up-right">
+
+            <img class="cards-education__img-academia img-academia-2" src="svg/free-code-camp-logo.svg" alt="">
+
+           <div class="cars-education__description-curso">
+             <div class="description-curso__formacion-conteiner">
+                <h4 class="description-curso_academia texto-demas"  data-aos="fade-up-right">Academy: FreeCodeCamp</h4>
+                <h4 class="description-curso_formacion texto-demas"  data-aos="fade-up-right">Formation: JavaScript Algorithms and Data Structures </h4>
+                <p class="description-curso_fecha texto-demas"  data-aos="fade-up-right">2022</p>
+            </div>
+          </div>
+
+       </div>
+
+
+
+
+
+
+
+
+     </div>
+        
+    </section>
+    
+
+
+          <!--SECTION #4 PROYECTOS-->
+    <section class="section-all section-proyectos"  >
+
+          <!--PARTE IZQUIERDA-->
+          <div class="section-all__top card-proyectos">
+            <h2 class="top__texto"  data-aos="fade-up-right">proyect</h2>
+          </div>
+
+
+          <!--PARTE DERECHA-->
+        <div class="section-all__bottom section-proyectos-bottom">
+           
+                 <!--CARD #1-->
+           <section class="card-proyectos-contenedor" data-aos="fade-up-right">
+          
+                      <!--izquierda txt-->
+               <div class="cars-proyectos-contenedor__left-proyect">
+                  <h1 class="left-proyect__name-proyect texto-demas"  data-aos="fade-up-right">Proyect</h1>
+                   <a href="left-proyect__enlace-github">
+                     <img class="left-proyect__enlace-github__img" src="/svg/icono-githhub.svg" alt="">
+                    </a>
+               </div>
+
+                     <!--derecha img-->         
+               <div class="cars-proyectos-contenedor__right cars-proyectos-contenedor__right-box-1"></div>
+
+          </section>
+          
+
+
+                 <!--CARD #2 -->
+          <section class="card-proyectos-contenedor" data-aos="fade-up-right">
+          
+                  <!--izquierda txt-->
+              <div class="cars-proyectos-contenedor__left-proyect">
+                   <h1 class="left-proyect__name-proyect texto-demas"  data-aos="fade-up-right">Proyect </h1>
+                   <a href="left-proyect__enlace-github">
+                   <img class="left-proyect__enlace-github__img" src="/svg/icono-githhub.svg" alt="">
+                   </a>
+             </div>
+
+                 <!--derecha img-->
+      
+            <div class="cars-proyectos-contenedor__right cars-proyectos-contenedor__right-box-1">
+             
+           </div>
+
+         </section>
+
+
+
+
+
+       </div>
+    </section>
+
+
+
+</main>
+
+
+<footer class="footer"  >
+
+    <div class="footer__top">
+      <h1 class="top__texto"  data-aos="fade-up-right">contact</h1>
+    </div>
+
+    <div class="footer__bottom">
+      
+      <div class="footer__bottom__contacto-contenedor">
+        <a class="contacto-contenedor__a contacto-contenedor__linkedin"  data-aos="fade-up-right" href="#"><img src="linkedin.png" alt=""></a>
+        <a class="contacto-contenedor__a contacto-contenedor__gmail"  data-aos="fade-up-right" href="#"><img src="/gmail.png" alt=""></a>
+        <a class="contacto-contenedor__a contacto-contenedor__ig"  data-aos="fade-up-right" href="#">  <img src="instagram.png" alt=""> </a>
+      </div>
+
+      <div class="footer__bottom__developer">
+            <p class="developer__p texto-demas">Developer: Franco Albarracin</p>
+      </div> 
+    </div>
+
+
+</footer>
+
+
+   <!--Libreria AOS Scroll-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
